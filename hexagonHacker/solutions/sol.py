@@ -1,5 +1,6 @@
 import re
 from collections import defaultdict
+import sys
 # y change, followed by x change, 
 # up being negative y, left is negative x
 move_to_offset = {
