@@ -13,10 +13,10 @@ mkdir -p output
 [[ -e samples/input ]] && cp -r samples/input ./
 [[ -e samples/output ]] && cp -r samples/output ./
 
-for i in {2..10}
+for i in {3..7}
 do
   echo $i | python3 ./mkin.py > input/input$i.txt
-  python3 ./solutions/sol.py < input/input$i.txt > output/output$i.txt
+  python3 ./solutions/sol2.py < input/input$i.txt > output/output$i.txt
 
   echo $i
 done
